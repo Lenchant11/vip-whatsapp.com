@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WhatsApp - 安全、私密的即时通讯</title>
+    <link rel="icon" href="https://static.whatsapp.net/rsrc.php/v4/yP/r/rYZqPCBaG70.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -253,10 +254,11 @@
             transform: scaleX(1);
         }
         
+        /* 修改：下载卡片顶部图标颜色为黑色 */
         .download-card i {
             font-size: 60px;
             margin-bottom: 20px;
-            color: #25d366;
+            color: #000000; /* 从绿色改为黑色 */
             transition: transform 0.3s ease;
         }
         
@@ -326,14 +328,24 @@
             transform: translateY(-2px);
         }
         
+        /* 修改：下载按钮中的图标大小限制 */
         .platform-icon {
             font-size: 12px;
             filter: brightness(0) invert(1);
+            max-width: 30px; /* 添加最大宽度限制 */
+            max-height: 30px; /* 添加最大高度限制 */
+            width: 30px; /* 直接设置宽度 */
+            height: 30px; /* 直接设置高度 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .google-play-icon {
-            width: 16px;
-            height: 16px;
+            width: 30px; /* 直接设置宽度 */
+            height: 30px; /* 直接设置高度 */
+            max-width: 30px; /* 添加最大宽度限制 */
+            max-height: 30px; /* 添加最大高度限制 */
             filter: none;
         }
         
@@ -892,13 +904,13 @@
             <div class="hero-image">
                 <div class="carousel-slides">
                     <div class="carousel-slide active">
-                        <img src="images/wsapp1.png" alt="WhatsApp应用界面">
+                        <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="WhatsApp应用界面">
                     </div>
                     <div class="carousel-slide">
-                        <img src="images/wsapp2.png" alt="WhatsApp群组聊天">
+                        <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="WhatsApp群组聊天">
                     </div>
                     <div class="carousel-slide">
-                        <img src="images/wsapp3.png" alt="WhatsApp社交动态">
+                        <img src="https://images.unsplash.com/photo-1611605698323-b1e99cfd37ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="WhatsApp社交动态">
                     </div>
                 </div>
             </div>
@@ -930,7 +942,7 @@
                         </h3>
                         <p>使用 Android 版应用，畅享通话、屏幕共享，操作更快捷。适用于 Android 4.1 及更高版本</p>
                         <a href="#" class="download-link">
-                            <svg class="google-play-icon" viewBox="0 0 24 24" width="16" height="16">
+                            <svg class="google-play-icon" viewBox="0 0 24 24" width="30" height="30">
                                 <path fill="#4285F4" d="M22.018 13.298c-.175 1.094-.495 2.119-.952 3.055l-3.869-3.869 3.869-3.869c.457.936.777 1.961.952 3.055z"/>
                                 <path fill="#34A853" d="M12.954 12.001l3.869-3.869c-.936-.457-1.961-.777-3.055-.952v4.821z"/>
                                 <path fill="#FBBC04" d="M12.954 12.001l3.869 3.869c-.936.457-1.961.777-3.055.952v-4.821z"/>
@@ -1076,7 +1088,7 @@
                     <a href="#" class="download-link">WhatsApp商业版</a>
                 </div>
                 <div class="business-image">
-                    <img src="images/wsbusines.webp" alt="WhatsApp Business界面" width="500">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="WhatsApp Business界面" width="500">
                 </div>
             </div>
             
